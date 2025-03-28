@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="id">        
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Web ST Bhinneka</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo" onclick="showDashboard()">
+                <img src="logo kampus.png" alt="Logo ST Bhinneka">
+            </div>
+            <h2>Menu Navigasi </h2>
+            <nav>
+                <ul>
+                    <li><a href="#home" onclick="showPage('beranda')">Beranda</a></li>
+                    <li><a href="#about" onclick="showPage('tentang-kami')">Tentang Kami</a></li>
+                    <li><a href="#contact" onclick="showPage('hubungi-kami')">Hubungi Kami</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="content">
+                <h2>Formulir Pengguna</h2>
+                <form>
+                    <label for="nama">Nama:</label> <br>
+                    <input type="text" id="nama" name="nama" required>
+                    <br>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="password">Password:</label> <br>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <label for="alamat">Alamat:</label> <br>
+                    <textarea id="alamat" name="alamat"></textarea>
+                    <br><br><br>  
+                    <label>Jenis Kelamin : </label>  
+                    <br> <input type="radio" id="laki-laki" name="kelamin" value="laki-laki">
+                    <label for="laki-laki">Laki-laki</label>
+                    <br> <input type="radio" id="perempuan" name="kelamin" value="perempuan"> 
+                    <label for="perempuan">Perempuan</label> <br> <br> 
+                    <label>Usia : </label>  
+                    <input type="number" id="usia" name="usia" width="th">
+                    <br><br> <label for="gambar">Pilih Gambar:</label> <br>
+                     <input type="file" id="gambar" name="gambar">
+                    <br>  <label for="tanggal-lahir">Tanggal Lahir:</label> <br>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir"> 
+                    <br> <br> <label>Hobi:</label> 
+                    <br> <input type="checkbox" id="sports" name="hobby" value="Olaharga"> 
+                    <label for="sports">Olaharga</label>
+                    <br> <input type="checkbox" id="music" name="hobby" value="Musik">
+                    <label for="music">Musik</label>
+                    <br> <input type="checkbox" id="reading" name="hobby" value="Membaca"> 
+                    <label for="reading">Membaca</label>
+
+    <br><br>  
+                    <button type="submit">Kirim</button>
+                </form>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2023 ST Bhinneka. Semua hak dilindungi.</p>
+        </footer>
+    
+        <script>
+            function showDashboard() {
+                alert("Menampilkan Dashboard Utama Web ST Bhinneka");
+                // Logika tambahan untuk navigasi dashboard
+            }
+    
+            function showPage(page) {
+                alert("Menampilkan halaman: " + page);
+                // Logika tambahan untuk menampilkan halaman terkait
+            }
+        </script>
+    </body>
+    </html>, initial-scale=1.0">
+    <title>Document</title>
+</head styles body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}>
+
+<body>
+    
+</body>
+</html>
