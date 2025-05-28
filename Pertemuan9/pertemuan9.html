@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Konversi ala Dila</title>
+    <link rel="stylesheet" href="pertemuan9.css">
+    <script>
+        function convert() {
+            const input = document.getElementById("decimalInput").value.trim();
+            const resultDiv = document.getElementById("resultDiv");
+
+            // Validate input: non-empty numeric string of digits only.
+            if (!/^\d+$/.test(input)) {
+                resultDiv.innerHTML = "<p class='error'>This page says, masukkan angka yang benar!.</p>";
+                clearOutputs();
+                return;
+            }
+
+            const decimal = parseInt(input, 10);
+            if (isNaN(decimal)) {
+                resultDiv.innerHTML = "<p class='error'> This page says, masukkan angka yang benar!.</p>";
+                clearOutputs();
+                return;
+            }
+
+            resultDiv.innerHTML = "";
+            document.getElementById("binaryOutput").innerText = decimal.toString(2);
+            document.getElementById("octalOutput").innerText = decimal.toString(8);
+            document.getElementById("hexOutput").innerText = decimal.toString(16).toUpperCase();
+        }
+
+        function clearOutputs() {
+            document.getElementById("binaryOutput").innerText = "";
+            document.getElementById("octalOutput").innerText = "";
+            document.getElementById("hexOutput").innerText = "";
+        }
+    </script>
+</head>
+<body>
+    <h1>Konversi Bilangan Desimal</h1>
+    <input type="text" id="decimalInput" placeholder="Masukkan angka desimal" />
+    <button onclick="convert()">Konversi</button>
+    <div id="resultDiv"></div>
+    <h2>Hasil Konversi:</h2>
+    <p>Biner: <span id="binaryOutput"></span></p>
+    <p>Oktal: <span id="octalOutput"></span></p>
+    <p>Heksadesimal: <span id="hexOutput"></span></p>
+</body>
+</html>
+
